@@ -14,3 +14,41 @@ body{
     background-color: bisque;
     color: burlywood;
 }
+
+.container{
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+button{
+    padding: 5px;
+    font-style: oblique;
+    margin-top: 15px;
+    background-color: rgb(121, 78, 78);
+    margin-right: 10px;
+    color: burlywood;
+}
+
+.new{
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}

@@ -16,5 +16,21 @@
     </head>
     <body >
         <h1>Знакомство с Laravel</h1>
+        <a href="{{route('second')}}">Вторая страница</a>
+        <a href="{{route('third')}}">Третья страница</a>
+        <div class="container">
+            @for ($i=1; $i<=9; $i++)
+                <div class="card">
+                    <h2>Товар {{$i}}</h2>
+                    <img src="{{ Vite::asset('resources/img/cats-'.$i.'.jpg') }}">
+                    <p>описание товара</p>
+                    @if($i % 2 == 0)
+                        <p class="new">Новинка</p>
+                    @endif
+                    <button>Купить</button>
+                    <button>Описание породы</button>
+                </div>
+            @endfor
+        </div>
     </body>
 </html>
