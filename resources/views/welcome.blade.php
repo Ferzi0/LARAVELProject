@@ -16,6 +16,8 @@
     </head>
     <body >
         <h1>Знакомство с Laravel</h1>
+        <a href="{{route('home')}}">HomePage</a>
+        <a href="{{route('array')}}">Шляпная страница</a>
         <a href="{{route('second')}}">Вторая страница</a>
         <a href="{{route('third')}}">Третья страница</a>
         <div class="container">

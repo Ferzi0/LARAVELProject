@@ -9,6 +9,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
+    <header>
+        <a href="{{route('welcome')}}">Домашняя страница</a>
+    </header>
     <h1>Вторая страница</h1>
     <p>{{$name}}</p>
     <p>{{$arr['name']}}</p>
